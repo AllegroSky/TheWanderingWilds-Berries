@@ -1,0 +1,102 @@
+﻿{
+	"code": "candiedfruit",
+	"maxstacksize": 64,
+	"attributes": {
+		"displaycaseable": true,
+		"shelvable": true,
+		"handbook": { 
+          "groupBy": [ "candiedfruit-*" ],
+          "extraSections": [{ "title": "expandedfoods:item-handbooktitle-candiedfruit", "text": "expandedfoods:item-handbooktext-candiedfruit" }]
+			}}
+		,
+	"variantgroups": [{ "code": "berry", "states": [ "beachrose", "bearberry", "chokecherry", "honeyberry", "salmonberry", "saskatoon", "seabuckthorn", "snowberry" ] }],
+	"enabled": false, 
+	
+	"shape": { "base": "twwberry:compat/expandedfoods/shapes/{berry}" },
+	"creativeinventory": { "general": ["*"], "items": ["*"], "expandedfoods": ["*"] },
+	"materialDensity": 600,
+	"heldTpIdleAnimation":"holdbothhands",
+	"nutritionPropsByType": {
+		"*-beachrose": 		{ "satiety": 90, 	"health": 8, 	"foodcategory": "Fruit" },
+		"*-bearberry": 		{ "satiety": 125, 	"health": 2, 	"foodcategory": "Fruit" },
+		"*-snowberry":		{ "satiety": 125, 	"health": -4, 	"foodcategory": "Fruit" },
+		"*-honeyberry": 	{ "satiety": 240, 	"health": 1, 	"foodcategory": "Fruit" },
+
+		"*": { "satiety": 200, "health": 1, "foodcategory": "Fruit" }
+	},
+	"transitionablePropsByType": {
+		"*-beachrose": [{
+			"type": "Perish",
+			"freshHours": { "avg": 2400 },
+			"transitionHours": { "avg": 48 },
+			"transitionedStack": { "type": "item", "code": "game:rot" },
+			"transitionRatio": 0.25
+		}],
+        "@*-(saskatoon|bearberry)": [{
+            "type": "Perish",
+            "freshHours": { "avg": 900 },
+            "transitionHours": { "avg": 48 },
+            "transitionedStack": { "type": "item", "code": "game:rot" },
+            "transitionRatio": 0.25
+        }],
+		"*": [{
+			"type": "Perish",
+			"freshHours": { "avg": 720 },
+			"transitionHours": { "avg": 48 },
+			"transitionedStack": { "type": "item", "code": "game:rot" },
+			"transitionRatio": 0.25
+		}]
+	},
+	
+	"guiTransformByType": {
+		"@*-(redcurrant|whitecurrant|blackcurrant)": {
+			"translation": { "x": 0, "y": 0, "z": 0 },
+			"rotation": { "x": 83, "y": -103, "z": -55 },
+			"origin": { "x": 0.53, "y": 0.05, "z": 0.53 },
+			"scale": 2.6
+		},
+		"*-cranberry": {
+			"translation": { "x": -3, "y": 0, "z": 0 },
+			"rotation": { "x": 134, "y": -39, "z": 18 },
+			"origin": { "x": 0.5, "y": 0, "z": 0.6 },
+			"scale": 2.6
+		},
+		"*-saguaro": {
+			"translation": { "x": 3, "y": 0, "z": 0 },
+			"rotation": { "x": -59, "y": -112, "z": 180 },
+			"origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
+			"scale": 2
+		},
+		"*-pear": {
+			"translation": { "x": 0, "y": 0, "z": 0 },
+			"rotation": { "x": 171, "y": -63, "z": 33 },
+			"origin": { "x": 0.5, "y": 0.05, "z": 0.55 },
+			"scale": 2.6
+		}
+	},
+	"tpHandTransformByType": {
+		
+		"@*-(cranberry|redcurrant|whitecurrant|blackcurrant)": {
+			"translation": { "x": -1.5, "y": -1.75, "z": -1.5 },
+			"rotation": { "x": 180, "y": -124, "z": 54 },
+			"scale": 0.4
+		}
+	},
+	"groundTransformByType": {
+		"*-pomegranate": {
+			"translation": { "x": 0, "y": 0.07, "z": 0 },
+			"rotation": { "x": 90, "y": 0, "z": 0 },
+			"origin": { "x": 0.5, "y": 0.5, "z": 0.53 },
+			"scale": 1.8
+		},
+		"@*-(redcurrant|whitecurrant|blackcurrant|breadfruit)": {
+			"translation": { "x": 0, "y": 0.05, "z": 0 },
+			"rotation": { "x": 0, "y": 0, "z": 0 },
+			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"scale": 2.3
+		},
+		"*": { 
+			"scale": 2.3
+		}
+	}
+}

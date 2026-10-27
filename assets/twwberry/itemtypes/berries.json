@@ -1,0 +1,170 @@
+{
+	"code": "fruit",
+	"variantgroups": [
+		{ "code": "berry", "states": ["beachrose", "bearberry", "chokecherry", "honeyberry", "salmonberry", "saskatoon", "seabuckthorn", "snowberry"]} ],
+	
+	"behaviors": [
+		{ "name": "GroundStorable", "properties": {"layout": "Quadrants", "collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.125, "z2": 1 } }}],
+		
+	"creativeinventory": { "general": [ "*" ], "wanderingwilds": [ "*" ], "items": [ "*" ] },
+	"maxStackSize": 64,
+	"materialDensity": 900,
+	
+	"shapeByType": {
+		"*": { "base": "twwberry:item/fruit/{berry}"}},
+	"texturesByType": {
+		"@fruit-(honeyberry)": {
+			"fruit": { "base": "twwberry:item/berries/{berry}" },
+			"leaf": { "base": "twwberry:item/berries/{berry}leaf" }},
+		"*": {
+			"fruit": { "base": "twwberry:item/berries/{berry}" }}
+		},
+		
+	"nutritionPropsByType": {
+		"*-beachrose": 	 { "satiety": 40, "health": 4, 	"foodcategory": "Fruit" },
+		"*-bearberry": 	 { "satiety": 60, "health": 1, 	"foodcategory": "Fruit" },
+		"*-honeyberry":  { "satiety": 100, 				"foodcategory": "Fruit" },
+		"*-snowberry":   { "satiety": 60, "health": -1, "foodcategory": "Fruit" },
+		"*": 			 { "satiety": 80, 				"foodcategory": "Fruit" }
+		},
+		
+	"attributes": {
+		"foodTags": ["{berry}", "fruit"],
+		"handbook": { "groupBy": ["fruit-*"] },	
+		"nutritionPropsWhenInMeal": {
+			"satietyByType":  
+				{ "*":  120 }, 
+			"foodcategory": "Fruit"
+			},
+		"eatHealthEffectDurationSec": 10,
+		"eatHealthEffectTicks": 10,
+		"inPiePropertiesByType": {
+			"*": { "texture": "item/fill/{berry}", "partType": "Filling" }
+			},
+		"juiceablePropertiesByType": {
+			"@fruit-(bearberry|chokecherry|honeyberry|salmonberry|saskatoon|seabuckthorn|snowberry)": {
+				"litresPerItem": 0.3125,
+				"liquidStack": { "type": "item", "code": "juice-{berry}", "stacksize": 1 },
+				"pressedStack": { "type": "item", "code": "pressedmash-{berry}", "stacksize": 1 }
+			}
+		},
+			"groundStorageTransformByType": {
+				"*-beachrose": {
+					"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+					"rotation": { "x": 0, "y": -74, "z": 0 },
+					"scale": 0.9
+					},
+				"*-bearberry": {
+					"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+					"scale": 1.1
+					},
+				"*-chokecherry": {
+					"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+					"scale": 0.95
+					},
+				"*-honeyberry": {
+					"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+					"scale": 1
+					},
+				"*-seabuckthorn": {
+					"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+					"rotation": { "x": 0, "y": -150, "z": 0 },
+					"scale": 1.1
+					},
+				"*-snowberry": {
+					"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+					"rotation": { "x": 0, "y": 180, "z": 0 },
+					"scale": 0.8
+					},
+				"*": {
+					"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+					"scale": 0.9
+					}
+				}
+		},
+
+	"guiTransformByType": {
+		"*-beachrose": {
+			"translation": { "x": 2, "y": 0, "z": 0 },
+			"rotation": { "x": -42, "y": 16, "z": 180 },
+			"origin": { "x": 0.38, "y": -0.34, "z": 0 },
+			"scale": 2.78
+			},
+		"@*-(bearberry|seabuckthorn).*": {
+			"translation": { "x": 1.5, "y": 0, "z": 0 },
+			"rotation": { "x": -31, "y": 0, "z": 180 },
+			"origin": { "x": 0.5, "y": -0.23, "z": 0 },
+			"scale": 4.11
+			},
+		"*-chokecherry": {
+			"translation": { "x": 5, "y": 0, "z": 0 },
+			"rotation": { "x": 41, "y": -162, "z": 176 },
+			"origin": { "x": 0.5, "y": 0, "z": 0.4 },
+			"scale": 2.83
+			},
+		"*-honeyberry": {
+			"translation": { "x": 1.7, "y": 0, "z": -40 },
+			"rotation": { "x": -32, "y": -65, "z": 180 },
+			"origin": { "x": 1.65, "y": -0.65, "z": 0 },
+			"scale": 3.3
+			},
+		"*-salmonberry": {
+			"translation": { "x": 1.7, "y": 0, "z": 0 },
+			"rotation": { "x": -32, "y": -5, "z": 180 },
+			"origin": { "x": 0.56, "y": -0.2, "z": 0 },
+			"scale": 3.2
+			},
+		"*-snowberry": {
+			"translation": { "x": 2, "y": 4, "z": 0 },
+			"rotation": { "x": -31, "y": 57, "z": 174 },
+			"origin": { "x": 0.04, "y": -0.35, "z": 0.14 },
+			"scale": 3
+			},
+		"*": {
+			"translation": { "x": 1.7, "y": 0, "z": 0 },
+			"rotation": { "x": -32, "y": -5, "z": 180 },
+			"origin": { "x": 0.56, "y": -0.2, "z": 0 },
+			"scale": 3.3
+			}
+		},
+	"tpHandTransformByType": {
+		"*": {
+			"translation": { "x": -2.1, "y": -0.9, "z": -0.6 },
+			"rotation": { "x": 0, "y": 22, "z": -90 },
+			"origin": { "x": 1.4, "y": 0, "z": 0.5 },
+			"scale": 0.7
+			}
+		},
+	"groundTransformByType": {
+		"*": {
+			"translation": { "x": 0, "y": 0, "z": 0 },
+			"rotation": { "x": 2, "y": 0, "z": 0 },
+			"origin": { "x": 0.5, "y": -0, "z": 0.5 },
+			"scale": 4
+			}
+		},
+		
+	"transitionablePropsByType": {
+		"fruit-beachrose": [{
+			"type": "Perish",
+			"freshHours": { "avg": 192 },
+			"transitionHours": { "avg": 48 },
+			"transitionedStack": { "type": "item", "code": "game:rot" },
+			"transitionRatio": 0.25
+		}],
+		"@fruit-(bearberry|saskatoon)": [{
+			"type": "Perish",
+			"freshHours": { "avg": 60 },
+			"transitionHours": { "avg": 20 },
+			"transitionedStack": { "type": "item", "code": "game:rot" },
+			"transitionRatio": 0.25
+		}],
+		"*": [{
+			"type": "Perish",
+			"freshHours": { "avg": 48 },
+			"transitionHours": { "avg": 12 },
+			"transitionedStack": { "type": "item", "code": "game:rot" },
+			"transitionRatio": 0.25
+		}],
+	},	
+}

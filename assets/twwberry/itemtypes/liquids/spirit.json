@@ -1,0 +1,59 @@
+{
+	"code": "spirit",
+	"variantGroups": [
+		{ "code": "berry", "states": ["bearberry", "chokecherry", "honeyberry", "salmonberry", "saskatoon", "seabuckthorn", "snowberry"] },
+	],
+	
+	"class": "ItemLiquidPortion",
+	"matterState": "liquid",
+	"attributes": {
+		"handbook": {
+			"ignoreCreativeInvStacks": true,
+			"groupBy": ["spirit-*"]
+		},
+		"waterTightContainerProps": {
+			"nutritionPropsPerLitre": {
+				"satiety": 80,
+				"intoxication": 1.5,
+				"foodcategorybytype": {
+					"*": "NoNutrition"
+				}
+			},
+			"containable": true,
+			"itemsPerLitre": 100,
+			"texture": { 
+				"base": "item/liquid/{berry}", 
+				"alphaByType": {
+					"spirit-snowberry" : 50,
+					"*" : 80 }				
+				},
+			"allowSpill": true,
+			"whenSpilled": { 
+				"action": "DropContents",
+				"stack": { "type": "item", "code": "twwberry:spirit-{berry}" } 
+			}
+		},
+		"distillationProps": {
+			"distilledStack": { "type": "item", "code": "game:alcoholportion" },
+			"ratio": 0.5
+		},
+		
+	},
+	"shape": { "base": "game:item/liquid" },
+	"texture": { 
+		"base": "twwberry:item/liquid/{berry}", 
+		"alpha": 255
+	},
+	"creativeinventoryStacks": [ { "tabs": ["general", "liquids", "wanderingwilds"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "twwberry:spirit-{berry}", "makefull": true } ] } } ] } ],
+	"maxstacksize": 5000,
+	"materialDensity": 200,
+	"guiTransform": {
+		"translation": { "x": 0, "y": 1, "z": 0 },
+		"rotation": { "x": 123, "y": -33, "z": -13 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": 1.4
+	},
+	"tpHandTransform": {
+		"translation": { "x": -1.5, "y": -1, "z": -1.4 }
+	}
+}

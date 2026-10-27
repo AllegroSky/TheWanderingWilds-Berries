@@ -1,0 +1,53 @@
+{
+	"code": "rosewater",
+	"class": "ItemLiquidPortion",
+	"matterState": "liquid",
+	"attributes": {
+		"handbook": { "ignoreCreativeInvStacks": true },
+		"waterTightContainerProps": {
+			"nutritionPropsPerLitre": {
+				"satiety": 80,
+				"health": 12,
+				"foodcategory": "Fruit"
+			},
+			"eatHealthEffectDurationSec": 10,
+			"eatHealthEffectTicks": 10,
+			"containable": true,
+			"itemsPerLitre": 100,
+			"texture": { 
+				"base": "item/liquid/rosewater", 
+				"alpha": 100 
+			},	
+			"allowSpill": true,
+			"whenSpilled": {
+				"action": "DropContents",
+				"stack": { "type": "item", "code": "twwberry:rosewater" } 
+			}},
+		},
+	"shape": { "base": "game:item/liquid" },
+	"texture": { 
+		"base": "twwberry:item/liquid/rosewater", 
+		"alpha": 255
+	},
+	"creativeinventoryStacks": [ { "tabs": ["general", "liquids", "wanderingwilds"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "twwberry:rosewater", "makefull": true } ] } } ] } ],
+	"maxstacksize": 5000,
+	"materialDensity": 200,
+	"guiTransform": {
+		"translation": { "x": 0, "y": 1, "z": 0 },
+		"rotation": { "x": 123, "y": -33, "z": -13 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": 1.4
+	},
+	"tpHandTransform": {
+		"translation": { "x": -1.5, "y": -1, "z": -1.4 }
+	},
+	"transitionableProps": [
+		{
+			"type": "Perish",
+			"freshHours": { "avg": 3360 },
+			"transitionHours": { "avg": 48 },
+			"transitionedStack": { "type": "item", "code": "game:rot" },
+			"transitionRatio": 0.005
+		}
+	]
+}

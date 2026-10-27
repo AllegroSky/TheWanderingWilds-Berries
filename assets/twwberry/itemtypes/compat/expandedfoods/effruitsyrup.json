@@ -1,0 +1,66 @@
+{
+	"code": "syrup",
+	"class": "ItemLiquidPortion",
+	"matterState": "liquid",
+	"variantgroups": [ {"code": "berry", "states": [ "rosewater", "bearberry", "chokecherry", "honeyberry", "salmonberry", "saskatoon", "seabuckthorn", "snowberry" ] } ],
+	"enabled" : false,
+	
+	"attributes": {
+		"handbook": {
+			"ignoreCreativeInvStacks": true,
+            "groupBy": ["syrup-*"],
+		},
+		"inBowlShape": { "base": "game:block/food/meal/liquid" },
+		"nutritionPropsWhenInMealByType": { 
+			"*-rosewater": 		{ "satiety": 50, 	"health": 8, 	"foodcategory": "Fruit" },
+			"*-bearberry": 		{ "satiety": 65, 	"health": 2, 	"foodcategory": "Fruit" },
+			"*-snowberry": 		{ "satiety": 65, 	"health": -2, 	"foodcategory": "Fruit" },
+			"*-honeyberry": 	{ "satiety": 140, 	"health": 1, 	"foodcategory": "Fruit" },
+			"*": 				{ "satiety": 120, 	"health": 1, 	"foodcategory": "Fruit" }
+		},
+		"inPiePropertiesByType": { 
+			"*": {
+				"texture": "twwberry:item/liquid/{berry}",
+				"partType": "Filling"
+			}
+		},
+		"waterTightContainerProps": {
+			"containable": true,
+			"itemsPerLitre": 100,
+			"texturebytype": {
+				"*": { "base": "twwberry:item/liquid/{berry}" }
+			},
+			"allowSpill": true,
+			"whenSpilled": {
+				"action": "DropContents",
+				"stack": { "type": "item", "code": "twwberry:syrup-{berry}" }
+			},
+		}
+	},
+	"shape": { "base": "aculinaryartillery:item/goop" },
+	"texturebytype": {
+		"*": { "base": "twwberry:item/liquid/{berry}"}
+	},
+	
+	"transitionableProps": [{
+    	"type": "Perish",
+    	"freshHours": { "avg": 5184 },
+    	"transitionHours": { "avg": 5184 },
+    	"transitionedStack": { "type": "item", "code": "game:rot" },
+		"transitionRatio": 0.005
+  	}],
+	"creativeinventoryStacks": 
+	[ { "tabs": ["general", "liquids", "expandedfoods", "wanderingwilds"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "twwberry:syrup-{berry}", "makefull": true } ] } } ] } ],
+	"maxstacksize": 5000,
+	"materialDensity": 200,
+	"guiTransform": {
+        "translation": { "x": 0, "y": 1, "z": 0 },
+        "rotation": { "x": 123, "y": -33, "z": -13 },
+        "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+        "scale": 1.4
+	},
+	"tpHandTransform": {
+        "translation": { "x": -1.5, "y": -1.15, "z": -1.4 },
+        "rotation": { "x": 0, "y": -76, "z": 1 }
+	}
+}

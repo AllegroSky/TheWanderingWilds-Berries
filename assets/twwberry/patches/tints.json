@@ -1,0 +1,74 @@
+[
+    {
+        "op": "add",
+        "path": "/-",
+        "value": {
+            "code": "bearberry",
+            "texture": {
+                "base": "twwberry:environment/bearberry"
+            },
+            "loadIntoBlockTextureAtlas": true
+        },
+        "file": "game:config/colormaps.json"
+    },
+	{
+        "op": "add",
+        "path": "/-",
+        "value": {
+            "code": "flowertest",
+            "texture": {
+                "base": "twwberry:environment/flowertest"
+            },
+            "loadIntoBlockTextureAtlas": true
+        },
+        "file": "game:config/colormaps.json"
+    },
+	{
+        "op": "add",
+        "path": "/-",
+        "value": {
+            "code": "saskatoon",
+            "texture": {
+                "base": "twwberry:environment/saskatoon"
+            },
+            "loadIntoBlockTextureAtlas": true
+        },
+        "file": "game:config/colormaps.json"
+    },
+	{
+        "op": "add",
+        "path": "/-",
+        "value": {
+            "code": "snowberry",
+            "texture": {
+                "base": "twwberry:environment/snowberry"
+            },
+            "loadIntoBlockTextureAtlas": true
+        },
+        "file": "game:config/colormaps.json"
+    },
+	{
+        "op": "add",
+        "path": "/-",
+        "value": {
+            "code": "chokecherry",
+            "texture": {
+                "base": "twwberry:environment/chokecherry"
+            },
+            "loadIntoBlockTextureAtlas": true
+        },
+        "file": "game:config/colormaps.json"
+    },
+	{
+        "op": "add",
+        "path": "/-",
+        "value": {
+            "code": "seaBuckthorn",
+            "texture": {
+                "base": "twwberry:environment/seabuckthorn"
+            },
+            "loadIntoBlockTextureAtlas": true
+        },
+        "file": "game:config/colormaps.json"
+    }
+]

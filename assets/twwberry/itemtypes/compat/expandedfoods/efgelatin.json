@@ -1,0 +1,59 @@
+{
+	"code": "gelatin",
+	"variantgroups": [{ "code": "berry", "states": [ "beachrose", "bearberry", "chokecherry", "honeyberry", "salmonberry", "saskatoon", "seabuckthorn", "snowberry" ] }],
+	"maxstacksize": 32,
+	"materialDensity": 200,
+	"enabled" : false,
+	
+	"creativeinventory": { "general": ["*"], "items": ["*"], "expandedfoods": ["*"], "wandingwilds": ["*"] },
+	"shapeByType": {
+		"*": { "base": "expandedfoods:item/food/gelatinsolid" }},
+	"texturebyType": {
+		"*": { "base": "twwberry:gelatin/{berry}" }},
+		
+	"nutritionPropsByType": {
+		"*-beachrose": 		{ "satiety": 230, 	"health": 10, 	"foodcategory": "Fruit" },
+		"*-bearberry":		{ "satiety": 180, 	"health":  5, 	"foodcategory": "Fruit" },
+		"*-honeyberry":		{ "satiety": 240, 	"health":  3, 	"foodcategory": "Fruit" },
+		"*-snowberry":		{ "satiety": 180,	"health": -4, 	"foodcategory": "Fruit" },
+		"*": 				{ "satiety": 200, 	"health":  3, 	"foodcategory": "Fruit" }
+	},
+	"transitionableProps": [{
+    		"type": "Perish",
+    		"freshHours": { "avg": 216 },
+    		"transitionHours": { "avg": 108 },
+    		"transitionedStack": { "type": "item", "code": "game:rot" },
+    		"transitionRatio": 0.25
+  	}],
+	
+	"attributes": {
+		"displaycaseable": true,
+		"shelvable": true,
+		"handbook": { 
+          "groupBy": [ "gelatin-*" ],
+          "extraSections": [{ "title": "expandedfoods:item-handbooktitle-gelatin", "text": "expandedfoods:item-handbooktext-gelatin" }]
+        },
+    	"inPiePropertiesByType": {
+			"*": { "texture": "twwberry:gelatin/{berry}", "partType": "Filling" }
+		}
+	},
+
+	"guiTransform": {
+		"translation": { "x": 3, "y": 0, "z": 0 },
+		"rotation": { "x": -28, "y": 23, "z": 180 },
+		"origin": { "x": 0.5, "y": 0.07, "z": 0.5 },
+		"scale": 4
+		},
+	"groundTransform": {
+			"translation": { "x": 0, "y": 0, "z": 0 },
+			"rotation": { "x": 0, "y": 0, "z": 1 },
+			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"scale": 4
+		},
+	"tpHandTransform": {
+			"translation": { "x": -0.54, "y": -0.16, "z": -0.4 },
+			"rotation": { "x": 44, "y": -69, "z": 2 },
+			"origin": { "x": 0.5, "y": 0.13, "z": 0.5 },
+			"scale": 1
+		}
+}

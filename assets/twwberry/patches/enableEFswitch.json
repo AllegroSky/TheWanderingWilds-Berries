@@ -1,0 +1,34 @@
+﻿[
+  {
+    "op": "replace",
+    "path": "/enabled",
+    "value": true,
+    "file": "twwberry:itemtypes/compat/expandedfoods/efcandiedfruit.json",
+    "side": "server",
+    "dependsOn": [{ "modid": "expandedfoods" } ]
+  },
+  {
+    "op": "replace",
+    "path": "/enabled",
+    "value": true,
+    "file": "twwberry:itemtypes/compat/expandedfoods/effruitsyrup.json",
+    "side": "server",
+    "dependsOn": [{ "modid": "expandedfoods" } ]
+  },
+   {
+    "op": "replace",
+    "path": "/enabled",
+    "value": true,
+    "file": "twwberry:itemtypes/compat/expandedfoods/efgelatin.json",
+    "side": "server",
+    "dependsOn": [{ "modid": "expandedfoods" } ]
+  },
+  {
+    "op": "replace",
+    "path": "/enabled",
+    "value": true,
+    "file": "twwberry:itemtypes/compat/expandedfoods/efdryfruit.json",
+    "side": "server",
+    "dependsOn": [{ "modid": "expandedfoods" } ]
+  }
+]
