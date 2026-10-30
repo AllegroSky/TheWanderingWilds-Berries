@@ -1,0 +1,103 @@
+{
+	"code": "efspirit",
+	"class": "ItemLiquidPortion",
+	"matterState": "liquid",
+	"enabled" : false,
+	"variantgroups": [
+		{ "code": "age", "states": [ "strong", "potent" ]},
+		{ "code": "berry", "states": [ "bearberry", "chokecherry", "honeyberry", "salmonberry", "saskatoon", "seabuckthorn", "snowberry" ]}
+	],
+	"attributes": {
+		"handbook": {
+			"ignoreCreativeInvStacks": true,
+            "groupBy": ["efspirit-*"], 
+		},
+		"inBowlShape": { "base": "game:block/food/meal/liquid" },
+		"waterTightContainerProps": {
+			"containable": true,
+			"itemsPerLitre": 100,
+			"texturebytype": {
+				"*-{berry}": { "base": "twwberry:item/liquid/{berry}", "alpha": 160 },
+			},
+			"allowSpill": true,
+			"whenSpilled": {
+				"action": "DropContents",
+				"stack": { "type": "item", "code": "twwberry:efspirit-{age}-{berry}" }
+			},
+			"nutritionPropsPerLitreByType": {
+				"efspirit-strong-bearberry" : {
+					"satiety": 90,
+					"intoxication": 0.3,
+					"health": 1,
+					"foodcategory": "Fruit"
+					},
+				"efspirit-strong-snowberry" : {
+					"satiety": 80,
+					"intoxication": 0.3,
+					"health": -1,
+					"foodcategory": "Fruit"
+					},
+				"efspirit-strong-*" : {
+					"satiety": 90,
+					"intoxication": 0.3,
+					"health": 0.5,
+					"foodcategory": "Fruit"
+					},
+					
+				"efspirit-potent-bearberry" : {
+					"satiety": 100,
+					"intoxication": 0.45,
+					"health": 2,
+					"foodcategory": "Fruit"
+					},
+				"efspirit-potent-snowberry" : {
+					"satiety": 90,
+					"intoxication": 0.45,
+					"health": -1,
+					"foodcategory": "Fruit"
+					},
+				"efspirit-potent-*" : {
+					"satiety": 100,
+					"intoxication": 0.45,
+					"health": 1,
+					"foodcategory": "Fruit"
+					},
+				}
+		},
+		"distillationPropsByType": { 
+			"*-strong-*" : {"distilledStack": { "type": "item", "code": "game:alcoholportion" }, "ratio": 0.5 },
+			"*-potent-*" : {"distilledStack": { "type": "item", "code": "game:alcoholportion" }, "ratio": 0.75 }
+		}
+	},
+	"transitionableProps": [{
+    		"type": "Perish",
+    		"freshHours": { "avg": 6720 },
+    		"transitionHours": { "avg": 288 },
+    		"transitionedStack": { "type": "item", "code": "game:vinegarportion" },
+    		"transitionRatio": 1
+			},
+			{
+    		"type": "Cure",
+    		"freshHours": { "avg": 6720 },
+    		"transitionHours": { "avg": 2016 },
+    		"transitionedStack": { "type": "item", "code": "twwberry:efspirit-potent-{berry}" },
+    		"transitionRatio": 1
+			}
+		],
+		
+	"shape": { "base": "game:item/liquid" },
+	"texturebytype": {
+		"*": { "base": "twwberry:item/liquid/{berry}", "alpha": 160, "overlays": ["game:item/liquid/syrup"] }
+	},
+	"creativeinventoryStacks": [ { "tabs": ["general", "liquids", "expandedfoods", "wanderingwilds" ], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "twwberry:efspirit-{age}-{berry}", "makefull": true } ] } } ] } ],
+	"maxstacksize": 5000,
+	"materialDensity": 200,
+	"guiTransform": {
+		"rotation": { "x": 128, "y": 40, "z": 7 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": 1.4
+	},
+	"tpHandTransform": {
+		"translation": { "x": -1.5, "y": -1, "z": -1.4 }
+	}
+}

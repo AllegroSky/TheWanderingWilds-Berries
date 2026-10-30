@@ -1,0 +1,77 @@
+[
+    {
+        "file": "twwberry:itemtypes/berries",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydrationByType": { 
+			"fruit-beachrose" : 15,
+			"fruit-bearberry" : 20,
+			"fruit-chokecherry" : 10,
+			"fruit-saskatoon" : 25,
+			"fruit-snowberry" : -5,
+			"*": 40 
+			}
+		}
+	},
+    {
+        "file": "twwberry:itemtypes/liquids/rawjuice",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydrationByType": {
+			"juice-chokecherry" : 250,
+			"juice-snowberry" : -125,
+			"*": 1000 
+			},
+		},
+    },
+	{
+        "file": "twwberry:itemtypes/liquids/rosewater",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": 1200 }
+    },
+	{
+        "file": "twwberry:itemtypes/liquids/spirit",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydrationByType": {
+			"spirit-chokecherry" : 160,
+			"spirit-snowberry" : -60,
+			"*": 660 
+			}
+		}
+    },
+	{
+        "file": "twwberry:itemtypes/liquids/cider",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydrationByType": {
+			"cider-chokecherry" : 200,
+			"cider-snowberry" : -80,
+			"*": 800 
+			}
+		}
+    },
+	{
+        "file": "twwberry:itemtypes/compat/efwine",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }, { "modId":"expandedfoods" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydrationByType": {
+			"cider-chokecherry" : 200,
+			"cider-snowberry" : -80,
+			"*": 800 
+			}
+		}
+    },
+	
+	
+	
+	
+	
+]

@@ -3,7 +3,7 @@
     "op": "replace",
     "path": "/enabled",
     "value": true,
-    "file": "twwberry:itemtypes/compat/expandedfoods/efcandiedfruit.json",
+    "file": "twwberry:itemtypes/compat/efcandiedfruit.json",
     "side": "server",
     "dependsOn": [{ "modid": "expandedfoods" } ]
   },
@@ -11,7 +11,7 @@
     "op": "replace",
     "path": "/enabled",
     "value": true,
-    "file": "twwberry:itemtypes/compat/expandedfoods/effruitsyrup.json",
+    "file": "twwberry:itemtypes/compat/effruitsyrup.json",
     "side": "server",
     "dependsOn": [{ "modid": "expandedfoods" } ]
   },
@@ -19,7 +19,7 @@
     "op": "replace",
     "path": "/enabled",
     "value": true,
-    "file": "twwberry:itemtypes/compat/expandedfoods/efgelatin.json",
+    "file": "twwberry:itemtypes/compat/efgelatin.json",
     "side": "server",
     "dependsOn": [{ "modid": "expandedfoods" } ]
   },
@@ -27,8 +27,80 @@
     "op": "replace",
     "path": "/enabled",
     "value": true,
-    "file": "twwberry:itemtypes/compat/expandedfoods/efdryfruit.json",
+    "file": "twwberry:itemtypes/compat/efdryfruit.json",
     "side": "server",
     "dependsOn": [{ "modid": "expandedfoods" } ]
-  }
+  },
+  {
+    "op": "replace",
+    "path": "/enabled",
+    "value": true,
+    "file": "twwberry:itemtypes/compat/efwine.json",
+    "side": "server",
+    "dependsOn": [{ "modid": "expandedfoods" } ]
+  },
+    {
+    "op": "replace",
+    "path": "/enabled",
+    "value": true,
+    "file": "twwberry:itemtypes/compat/efspirit.json",
+    "side": "server",
+    "dependsOn": [{ "modid": "expandedfoods" } ]
+  },
+  {
+    "op": "addmerge",
+    "path": "/attributes/handbook/extraSections",
+    "value": [{ "title": "expandedfoods:item-handbooktitle-alcoholagingguide", "text": "expandedfoods:item-handbooktext-alcoholagingguide" }],
+    "side": "server",
+    "file": "twwberry:itemtypes/liquids/cider.json",
+	"dependsOn": [{ "modid": "expandedfoods" } ]
+  },
+  {
+    "op": "addmerge",
+    "path": "/attributes/handbook/extraSections",
+    "value": [{ "title": "expandedfoods:item-handbooktitle-alcoholagingguide", "text": "expandedfoods:item-handbooktext-alcoholagingguide" }],
+    "side": "server",
+    "file": "twwberry:itemtypes/liquids/spirit.json",
+	"dependsOn": [{ "modid": "expandedfoods" } ]
+  },
+  {
+    "op": "add",
+    "path": "/transitionableProps",
+    "value": [
+      {
+        "type": "Perish",
+        "freshHours": { "avg": 3360 },
+        "transitionHours": { "avg": 144 },
+        "transitionedStack": { "type": "item", "code": "game:vinegarportion" },
+        "transitionRatio": 1
+      },
+      {
+        "type": "Cure",
+        "freshHours": { "avg": 3360 },
+        "transitionHours": { "avg": 1008 },
+        "transitionedStack": { "type": "item", "code": "twwberry:efspirit-strong-{berry}" },
+        "transitionRatio": 1
+      }
+    ],
+    "side": "server",
+    "file": "twwberry:itemtypes/liquids/spirit.json",
+	"dependsOn": [{ "modid": "expandedfoods" } ]
+  },
+  {
+    "op": "addmerge",
+    "path": "/transitionableProps",
+    "value": [
+      {
+        "type": "Cure",
+        "freshHours": { "avg": 6720 },
+        "transitionHours": { "avg": 2016 },
+        "transitionedStack": { "type": "item", "code": "twwberry:efwine-strong-{berry}" },
+        "transitionRatio": 1
+      }
+    ],
+    "side": "server",
+    "file": "twwberry:itemtypes/liquids/cider.json",
+	"dependsOn": [{ "modid": "expandedfoods" } ]
+  },
+
 ]

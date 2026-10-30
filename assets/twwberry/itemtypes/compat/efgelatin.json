@@ -5,7 +5,7 @@
 	"materialDensity": 200,
 	"enabled" : false,
 	
-	"creativeinventory": { "general": ["*"], "items": ["*"], "expandedfoods": ["*"], "wandingwilds": ["*"] },
+	"creativeinventory": { "general": ["*"], "items": ["*"], "expandedfoods": ["*"], "wanderingwilds": ["*"] },
 	"shapeByType": {
 		"*": { "base": "expandedfoods:item/food/gelatinsolid" }},
 	"texturebyType": {

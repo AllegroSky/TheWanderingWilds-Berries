@@ -12,14 +12,24 @@
 			"groupBy": ["juice-*"]
 		},
 		"waterTightContainerProps": {
-			"nutritionPropsPerLitre": {
-				"satiety": 200, 
-				"foodcategory": "Fruit"
+			"nutritionPropsPerLitreByType": {
+				"*-bearberry" : {
+					"health" : 1,
+					"satiety": 200, 
+					"foodcategory": "Fruit"},
+				"*-snowberry" : {
+					"health" : -1,
+					"satiety": 200, 
+					"foodcategory": "Fruit"},
+				"*" : {
+					"satiety": 200, 
+					"foodcategory": "Fruit"}
+		
 			},
 			"containable": true,
 			"itemsPerLitre": 100,
 			"texture": { 
-				"base": "item/liquid/{berry}", 
+				"base": "twwberry:item/liquid/{berry}", 
 				"alphaByType": {
 					"juice-snowberry" : 110,
 					"@juice-(chokecherry|saskatoon)" : 200,
