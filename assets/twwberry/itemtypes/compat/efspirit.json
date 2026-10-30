@@ -10,14 +10,15 @@
 	"attributes": {
 		"handbook": {
 			"ignoreCreativeInvStacks": true,
-            "groupBy": ["efspirit-*"], 
+            "groupBy": ["efspirit-*"]
 		},
 		"inBowlShape": { "base": "game:block/food/meal/liquid" },
 		"waterTightContainerProps": {
 			"containable": true,
 			"itemsPerLitre": 100,
 			"texturebytype": {
-				"*-{berry}": { "base": "twwberry:item/liquid/{berry}", "alpha": 160 },
+				"efspirit-strong-*": { "base": "twwberry:item/liquid/{berry}", "alpha": 120, "overlays": ["game:item/liquid/syrup"] },
+				"efspirit-potent-*": { "base": "twwberry:item/liquid/{berry}", "alpha": 140, "overlays": ["game:item/liquid/potentwine"] }
 			},
 			"allowSpill": true,
 			"whenSpilled": {
@@ -61,7 +62,7 @@
 					"intoxication": 0.45,
 					"health": 1,
 					"foodcategory": "Fruit"
-					},
+					}
 				}
 		},
 		"distillationPropsByType": { 
@@ -87,7 +88,8 @@
 		
 	"shape": { "base": "game:item/liquid" },
 	"texturebytype": {
-		"*": { "base": "twwberry:item/liquid/{berry}", "alpha": 160, "overlays": ["game:item/liquid/syrup"] }
+		"efspirit-strong-*": { "base": "twwberry:item/liquid/{berry}", "alpha": 120, "overlays": ["game:item/liquid/syrup"] },
+		"efspirit-potent-*": { "base": "twwberry:item/liquid/{berry}", "alpha": 140, "overlays": ["game:item/liquid/potentwine"] }
 	},
 	"creativeinventoryStacks": [ { "tabs": ["general", "liquids", "expandedfoods", "wanderingwilds" ], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "twwberry:efspirit-{age}-{berry}", "makefull": true } ] } } ] } ],
 	"maxstacksize": 5000,
