@@ -233,13 +233,13 @@
 		},
 		"youngTextureMappingByType": {
 			"*": {
-				"north1": { "base": "twwberry:block/plant/berrybush/young/{type}-stem1" },
-				"south1": { "base": "twwberry:block/plant/berrybush/young/{type}-stem2" },
-				"northTinted1": { "base": "twwberry:block/plant/berrybush/young/{type}-leaves1" },
-				"southTinted1": { "base": "twwberry:block/plant/berrybush/young/{type}-leaves2" }
+				"north1": { "base": "twwberry:block/young/{type}-stem1" },
+				"south1": { "base": "twwberry:block/young/{type}-stem2" },
+				"northTinted1": { "base": "twwberry:block/young/{type}-leaves1" },
+				"southTinted1": { "base": "twwberry:block/young/{type}-leaves2" }
 			}
 		},
-		"youngShape": { "base": "game:block/plant/flower/1patch-cross-16x16" },
+		"youngShape": { "base": "game:block/plant/flower/1patch-3faces-24x24" },
 		"reinforcable": true,
 		"overrideRandomDrawOffset": 14,
 		"allowOverlays": false

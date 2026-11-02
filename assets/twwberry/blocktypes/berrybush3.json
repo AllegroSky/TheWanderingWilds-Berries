@@ -16,7 +16,7 @@
 	],
 	"variantgroups": [
 		{ "code": "state", "states": ["wild", "grown"] },
-		{ "code": "berry",	"states": [ "beachrose", "chokecherry", "honeyberry", "salmonberry", "saskatoon", "seabuckthorn", "snowberry"  ]},
+		{ "code": "berry",	"states": [ "bearberry2", "beachrose", "chokecherry", "honeyberry", "salmonberry", "saskatoon", "seabuckthorn", "snowberry"  ]},
 		{ "code": "cover", "states": ["free", "snow"] }
 	],
 	"attributes": {
@@ -35,14 +35,14 @@
 				"*-chokecherry-*": -2,
 				"*-honeyberry-*": 0,
 				"*-saskatoon-*": -5,
-				"*-snowberry-*": -5,
+				"*-snowberry-*": -25,
 				"*": 5
 			},
 			"pauseGrowthBelowTemperatureByType": {
 				"*-chokecherry-*": 5,
 				"*-honeyberry-*": 5,
 				"*-saskatoon-*": 0,
-				"*-snowberry-*": 2,
+				"*-snowberry-*": 4,
 				"*": 10
 			},
 			"pauseGrowthAboveTemperatureByType": {
@@ -77,25 +77,63 @@
 			},
 			
 			"nutrientUseByHealthStateByType": {
-				"fruitingbush-grown-salmonberry-*": {
+				"*-grown-salmonberry-*": {
 					"bountiful": 	{ "n": 5, 	"p": 5, 	"k": 5 },
 					"healthy": 		{ "n": 3.5, "p": 3.5, 	"k": 3.5 },
 					"struggling":	{ "n": 2, 	"p": 2, 	"k": 2 },
 					"barren": 		{ "n": 0.5, "p": 0.5,	"k": 0.5 }
 				},
+				"@fruitingbush-grown-(beachrose|seabuckthorn|snowberry)-.*": {
+					"bountiful": 	{ "n": 7, 	"p": 7, 	"k": 7 },
+					"healthy": 		{ "n": 5, 	"p": 5, 	"k": 5 },
+					"struggling":	{ "n": 2.5, "p": 2.5,	"k": 2.5 },
+					"barren": 		{ "n": 1,	"p": 1,		"k": 1 }
+				},
 				"*": {
 					"bountiful": 	{ "n": 10, 	"p": 10, 	"k": 10 },
-					"healthy": 		{ "n": 7, "p": 7, 	"k": 7 },
+					"healthy": 		{ "n": 7, 	"p": 7, 	"k": 7 },
 					"struggling":	{ "n": 4, 	"p": 4, 	"k": 4 },
-					"barren": 		{ "n": 1, "p": 1,	"k": 1 }
+					"barren": 		{ "n": 1, 	"p": 1,		"k": 1 }
 				},
 			},
-			"youngStageMonths": 	{ "avg": 3, "var": 1 },
-			"emptyStageMonths": 	{ "avg": 1, "var": 0.1 },
-			"floweringStageMonths": { "avg": 0.5, "var": 0.1 },
-			"ripeningStageMonths":  { "avg": 1, "var": 0.1 },
-			"ripeStageMonths": 		{ "avg": 1, "var": 0.1 }
+			
+			"youngStageMonthsByType": 	{
+				"*-beachrose-*": 	{ "avg": 2.5, 	"var": 0.4 },
+				"*-chokecherry-*": 	{ "avg": 5, 	"var": 1 },
+				"*-salmonberry-*": 	{ "avg": 2.3,	"var": 0.6 },
+				"*-saskatoon-*": 	{ "avg": 5, 	"var": 1 },
+				"*-seabuckthorn-*": { "avg": 3, 	"var": 0.5 },
+				"*-snowberry-*": 	{ "avg": 4, 	"var": 2 },
+				"*": 			 	{ "avg": 3, 	"var": 1 },
+				},
+			
+			"emptyStageMonthsByType": {	
+				"*-bearberry-*": 	{ "avg": 2.3, 	"var": 0.3 },
+				"*-salmonberry-*": 	{ "avg": 0.2, 	"var": 0.1 },
+				"*": 				{ "avg": 1, 	"var": 0.1 },
+				},
+			
+			"floweringStageMonthsByType": {
+				"*-beachrose-*": 	{ "avg": 2, 	"var": 0.5 },
+				"*-chokecherry-*": 	{ "avg": 0.3, 	"var": 0.05 },
+				"*-salmonberry-*": 	{ "avg": 0.4, 	"var": 0.1 },
+				"*": 				{ "avg": 0.5, 	"var": 0.1 }
+				},
+			
+			"ripeningStageMonthsByType": { 
+				"*-chokecherry-*": 	{ "avg": 0.8, 	"var": 0.1 },
+				"*-salmonberry-*": 	{ "avg": 1.4, 	"var": 0.2 },
+				"*": 				{ "avg": 1, 	"var": 0.1 },
+				},
+			
+			"ripeStageMonthsByType": {
+				"*-beachrose-*": 	{ "avg": 2, 	"var": 0.3 },
+				"*-bearberry-*": 	{ "avg": 2.3, 	"var": 1 },
+				"*-snowberry-*": 	{ "avg": 6, 	"var": 1 },
+				"*": 				{ "avg": 1, 	"var": 0.1 },
+				}
 		},
+		
 		"harvestedStacksByType": {
 			"*": [{ "type": "item", "code": "twwberry:fruit-{berry}", "quantity": { "avg": 5.5 }  }],
 		},
@@ -231,19 +269,19 @@
 		},
 		"youngTextureMappingByType": {
 			"*": {
-				"north1": { "base": "twwberry:block/clippings/{berry}-stem1" },
-				"south1": { "base": "twwberry:block/clippings/{berry}-stem2" },
-				"northTinted1": { "base": "twwberry:block/clippings/{berry}-leaves1" },
-				"southTinted1": { "base": "twwberry:block/clippings/{berry}-leaves2" }
+				"north1": { "base": "twwberry:block/young/{berry}-stem1" },
+				"south1": { "base": "twwberry:block/young/{berry}-stem2" },
+				"northTinted1": { "base": "twwberry:block/young/{berry}-leaves1" },
+				"southTinted1": { "base": "twwberry:block/young/{berry}-leaves2" }
 			}
 		},
-		"youngShape": { "base": "game:block/plant/flower/1patch-cross-16x16" },
+		"youngShape": { "base": "game:block/plant/flower/1patch-3faces-24x24" },
 		"reinforcable": true,
 		"overrideRandomDrawOffset": 14,
 		"allowOverlays": false
 	},
 	"shapeByType": {
-		"@fruitingbush-grown-(bearberry)-.*": {
+		"@fruitingbush-grown-(bearberry2)-.*": {
 			"base": "game:block/plant/berrybush/berrybush-small*",
 			"selectiveElements": [ "Stem/*", "Leaves/*" ],
 			"alternates": [
@@ -255,7 +293,7 @@
 				{ "rotateY": 310 }
 			]
 		},
-		"@fruitingbush-wild-(bearberry)-.*": {
+		"@fruitingbush-wild-(bearberry2)-.*": {
 			"base": "game:block/plant/berrybush/berrybush-small*",
 			"selectiveElements": [ "Stem/*", "Leaves/*" ],
 			"alternates": [

@@ -31,11 +31,6 @@
 	"attributes": {
 		"foodTags": ["{berry}", "fruit"],
 		"handbook": { "groupBy": ["fruit-*"] },	
-		"nutritionPropsWhenInMeal": {
-			"satietyByType":  
-				{ "*":  120 }, 
-			"foodcategory": "Fruit"
-			},
 		"eatHealthEffectDurationSec": 10,
 		"eatHealthEffectTicks": 10,
 		"inPiePropertiesByType": {

@@ -1,106 +1,161 @@
 {
-	"code": "dryfruit",
-	"maxstacksize": 64,
+	"code": "efdryfruit",
 	"variantgroups": [
-		{ "code": "berry", "states": [ "beachrose", "bearberry", "chokecherry", "honeyberry", "salmonberry", "saskatoon", "seabuckthorn", "snowberry" ]  }],
-	"enabled" : false,
+		{ "code": "berry", "states": ["beachrose", "bearberry", "chokecherry", "honeyberry", "salmonberry", "saskatoon", "seabuckthorn", "snowberry"]} ],
 	
-	"attributes": {
-		"displaycaseable": true,
-		"shelvable": true,
-		"handbook": { 
-          "groupBy": [ "dryfruit-*" ],
-          "extraSections": [{ "title": "expandedfoods:item-handbooktitle-dryfruit", "text": "expandedfoods:item-handbooktext-dryfruit" }]
-        },
-		//"bakingPropertiesByType": {
-        //    "@*-(guava|kumquat|plumnatal|gooseberry|cactusfruit)": null,
-        //    "*":  {
-        //        "temp": 100,
-        //        "levelFrom": 0.5,
-        //        "levelTo": 1.0,
-        //        "startScaleY": 0.8,
-        //        "endScaleY": 0.8,
-        //        "initialCode": "game:fruit-{fruit}"
-        //    }
-        //},
-		"inPiePropertiesByType": {
-			"*": { "texture": "twwberry:item/fill/{berry}", "partType": "Filling" }
+	"behaviors": [
+		{ "name": "GroundStorable", "properties": {"layout": "Quadrants", "collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.125, "z2": 1 } }}],
+		
+	"creativeinventory": { "general": [ "*" ], "wanderingwilds": [ "*" ], "items": [ "*" ] },
+	"maxStackSize": 64,
+	"materialDensity": 900,
+	"enabled": false,
+	
+	"shapeByType": {
+		"*": { "base": "twwberry:item/fruit/{berry}"}},
+	"texturesByType": {
+		"*": {
+			"fruit": { "base": "twwberry:item/compat/dried/{berry}" }}
 		},
-        "groundStorageTransformByType": {
-          "*": {
-            "origin": { "x": 0.5, "y": -0, "z": 0.5 }
-          }
-        },
-        "inTrapTransformByType": {
-          "*": {
-            "small": {
-              "translation": { "x": 0, "y": -0.075, "z": -0.03 },
-              "rotation": { "x": 0, "y": -17, "z": 0 },
-              "scale": 0.6
-            },
-            "large": {
-              "translation": { "x": -0.33, "y": 0.44, "z": 0.02 },
-              "rotation": { "x": 0, "y": 31, "z": 11 },
-              "scale": 0.6
-            }
-          }
-        },
-        "inMouthTransformByType": {
-          "*-cranberry": {
-            "translation": { "x": -1.51, "y": -1.26, "z": -0.95 },
-            "rotation": { "x": 13, "y": -125, "z": -79 },
-            "scale": 0.4
-          }
-        },
-        "displayable": {
-          "shelf": { "size": { "width": 4, "height": 4, "length": 4 } }
-        },
-		"onDisplayTransformByType": {
-			"*": {
-				"translation": { "x": 0.0, "y": -0.1, "z": 0.05 },
-				"scale": 0.8
+		
+	"nutritionPropsByType": {
+		"*-beachrose": 	 { "satiety": 40, "health": 4, 	"foodcategory": "Fruit" },
+		"*-bearberry": 	 { "satiety": 60, "health": 1, 	"foodcategory": "Fruit" },
+		"*-honeyberry":  { "satiety": 100, 				"foodcategory": "Fruit" },
+		"*-snowberry":   { "satiety": 60, "health": -1, "foodcategory": "Fruit" },
+		"*": 			 { "satiety": 80, 				"foodcategory": "Fruit" }
+		},
+		
+	"attributes": {
+		"foodTags": ["{berry}", "fruit"],
+		"handbook": { "groupBy": ["fruit-*"] },	
+		"extraSections": [{ "title": "expandedfoods:item-handbooktitle-dryfruit", "text": "expandedfoods:item-handbooktext-dryfruit" }],
+		"nutritionPropsWhenInMeal": {
+			"satietyByType":  
+				{ "*":  120 }, 
+			"foodcategory": "Fruit"
+			},
+		"eatHealthEffectDurationSec": 10,
+		"eatHealthEffectTicks": 10,
+		"inPiePropertiesByType": {
+			"*": { "texture": "item/fill/{berry}", "partType": "Filling" }
+			},
+			"groundStorageTransformByType": {
+				"*-beachrose": {
+					"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+					"rotation": { "x": 0, "y": -74, "z": 0 },
+					"scale": 0.8
+					},
+				"*-bearberry": {
+					"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+					"scale": 1
+					},
+				"*-chokecherry": {
+					"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+					"scale": 0.95
+					},
+				"*-honeyberry": {
+					"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+					"scale": 0.9
+					},
+				"*-seabuckthorn": {
+					"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+					"rotation": { "x": 0, "y": -150, "z": 0 },
+					"scale": 1
+					},
+				"*-snowberry": {
+					"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+					"rotation": { "x": 0, "y": 180, "z": 0 },
+					"scale": 0.7
+					},
+				"*": {
+					"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+					"scale": 0.8
+					}
+				}
+		},
+	"guiTransformByType": {
+		"*-beachrose": {
+			"translation": { "x": 2, "y": 0, "z": 0 },
+			"rotation": { "x": -42, "y": 16, "z": 180 },
+			"origin": { "x": 0.38, "y": -0.34, "z": 0 },
+			"scale": 2.78
+			},
+		"@*-(bearberry|seabuckthorn).*": {
+			"translation": { "x": 1.5, "y": 0, "z": 0 },
+			"rotation": { "x": -31, "y": 0, "z": 180 },
+			"origin": { "x": 0.5, "y": -0.23, "z": 0 },
+			"scale": 4.11
+			},
+		"*-chokecherry": {
+			"translation": { "x": 5, "y": 0, "z": 0 },
+			"rotation": { "x": 41, "y": -162, "z": 176 },
+			"origin": { "x": 0.5, "y": 0, "z": 0.4 },
+			"scale": 2.83
+			},
+		"*-honeyberry": {
+			"translation": { "x": 1.7, "y": 0, "z": -40 },
+			"rotation": { "x": -32, "y": -65, "z": 180 },
+			"origin": { "x": 1.65, "y": -0.65, "z": 0 },
+			"scale": 3.3
+			},
+		"*-salmonberry": {
+			"translation": { "x": 1.7, "y": 0, "z": 0 },
+			"rotation": { "x": -32, "y": -5, "z": 180 },
+			"origin": { "x": 0.56, "y": -0.2, "z": 0 },
+			"scale": 3.2
+			},
+		"*-snowberry": {
+			"translation": { "x": 2, "y": 4, "z": 0 },
+			"rotation": { "x": -31, "y": 57, "z": 174 },
+			"origin": { "x": 0.04, "y": -0.35, "z": 0.14 },
+			"scale": 3
+			},
+		"*": {
+			"translation": { "x": 1.7, "y": 0, "z": 0 },
+			"rotation": { "x": -32, "y": -5, "z": 180 },
+			"origin": { "x": 0.56, "y": -0.2, "z": 0 },
+			"scale": 3.3
 			}
 		},
-		"inContainerTextureByType": {
-			"*": { "base": "twwberry:item/fill/{berry}" }
-		}
-	},
-	"shapebytype": { 
-		"*": { "base": "twwberry:compat/dry-{berry}" }
-	},
-	"creativeinventory": { "general": ["*"], "items": ["*"], "expandedfoods": ["*"] },
-	"nutritionPropsByType": {
-		"*-beachrose": 		{ "satiety": 35, "health":  4, 	"foodcategory": "Fruit" },
-		"*-bearberry": 		{ "satiety": 50, "health":  1,	"foodcategory": "Fruit" },
-		"*-honeyberry": 	{ "satiety": 90,				"foodcategory": "Fruit" },
-		"*-snowberry": 		{ "satiety": 35, "health": -1,	"foodcategory": "Fruit" },
-		"*": 				{ "satiety": 70, 				"foodcategory": "Fruit" }
-	},
+	"tpHandTransformByType": {
+		"*": {
+			"translation": { "x": -2.1, "y": -0.9, "z": -0.6 },
+			"rotation": { "x": 0, "y": 22, "z": -90 },
+			"origin": { "x": 1.4, "y": 0, "z": 0.5 },
+			"scale": 0.7
+			}
+		},
+	"groundTransformByType": {
+		"*": {
+			"translation": { "x": 0, "y": 0, "z": 0 },
+			"rotation": { "x": 2, "y": 0, "z": 0 },
+			"origin": { "x": 0.5, "y": -0, "z": 0.5 },
+			"scale": 4
+			}
+		},
+		
 	"transitionablePropsByType": {
-		"*-beachrose": [{
+		"fruit-beachrose": [{
+			"type": "Perish",
+			"freshHours": { "avg": 720 },
+			"transitionHours": { "avg": 300 },
+			"transitionedStack": { "type": "item", "code": "game:rot" },
+			"transitionRatio": 0.25
+		}],
+		"@fruit-(bearberry|saskatoon)": [{
 			"type": "Perish",
 			"freshHours": { "avg": 600 },
-			"transitionHours": { "avg": 120 },
+			"transitionHours": { "avg": 200 },
 			"transitionedStack": { "type": "item", "code": "game:rot" },
 			"transitionRatio": 0.25
 		}],
 		"*": [{
 			"type": "Perish",
 			"freshHours": { "avg": 480 },
-			"transitionHours": { "avg": 100 },
+			"transitionHours": { "avg": 120 },
 			"transitionedStack": { "type": "item", "code": "game:rot" },
 			"transitionRatio": 0.25
-		}]
-	},
-    "guiTransformByType": {
-        "*": {
-          "translation": { "x": 0, "y": 0, "z": 0 },
-          "rotation": { "x": 138, "y": 0, "z": -1 },
-          "origin": { "x": 0.48, "y": 0.1, "z": 0.5 },
-          "scale": 3.19
-        }
-    },
-	
-    "heldRightReadyAnimation": "holdbothhands",
-    "heldTpIdleAnimation": "holdbothhands"
+		}],
+	},	
 }

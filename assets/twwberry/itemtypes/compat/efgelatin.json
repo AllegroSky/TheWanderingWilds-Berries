@@ -1,6 +1,6 @@
 {
 	"code": "gelatin",
-	"variantgroups": [{ "code": "berry", "states": [ "beachrose", "bearberry", "chokecherry", "honeyberry", "salmonberry", "saskatoon", "seabuckthorn", "snowberry" ] }],
+	"variantgroups": [{ "code": "berry", "states": [ "rosewater", "bearberry", "chokecherry", "honeyberry", "salmonberry", "saskatoon", "seabuckthorn", "snowberry" ] }],
 	"maxstacksize": 32,
 	"materialDensity": 200,
 	"enabled" : false,
@@ -9,7 +9,7 @@
 	"shapeByType": {
 		"*": { "base": "expandedfoods:item/food/gelatinsolid" }},
 	"texturebyType": {
-		"*": { "base": "twwberry:gelatin/{berry}" }},
+		"*": { "base": "twwberry:item/compat/gelatin/{berry}" }},
 		
 	"nutritionPropsByType": {
 		"*-beachrose": 		{ "satiety": 230, 	"health": 10, 	"foodcategory": "Fruit" },
@@ -34,7 +34,7 @@
           "extraSections": [{ "title": "expandedfoods:item-handbooktitle-gelatin", "text": "expandedfoods:item-handbooktext-gelatin" }]
         },
     	"inPiePropertiesByType": {
-			"*": { "texture": "twwberry:gelatin/{berry}", "partType": "Filling" }
+			"*": { "texture": "twwberry:item/compat/gelatin/{berry}", "partType": "Filling" }
 		}
 	},
 

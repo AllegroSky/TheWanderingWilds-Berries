@@ -66,19 +66,6 @@
 	"rainPermeable": true,
 	"materialDensity": 200,
 	
-	
-	"climateColorMapByType": {
-		"*": "climatePlantTint",
-		},
-	"seasonColorMapByType": {
-		"*-bearberry-*": "bearberry",
-		"*-chokecherry-*": "chokecherry",
-		"*-saskatoon-*": "saskatoon",
-		"*-seabuckthorn-*":	"seaBuckthorn",
-		"*-snowberry-*": "snowberry",
-		"*": "seasonalBirch"
-		},
-	
 	"transitionableProps": [{
 		"type": "Perish",
 		"freshHours": { "avg": 360 },
