@@ -1,0 +1,14 @@
+[
+	{
+		"op": "addmerge",
+		"file": "game:blocktypes/clay/fired/crock.json",
+		"path": "/textures",
+		"value": { "labeltwwberry": { "base": "block/clay/crock/labeltwwberry" } }
+	},
+	{
+		"op": "addeach",
+		"file": "game:blocktypes/clay/fired/crock.json",
+		"path": "/attributes/labelNames/-",
+		"value": [ "beachrose", "bearberry", "chokecherry", "honeyberry", "salmonberry", "saskatoon", "seabuckthorn", "snowberry" ]
+	}
+]
