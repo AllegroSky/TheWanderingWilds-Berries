@@ -1,0 +1,33 @@
+[
+    {
+        "op": "addeach",
+        "file": "game:recipes/cooking/meatystew.json",
+        "path": "/ingredients/7/validStacks/-",
+        "value": [
+            { "type": "item", "code": "twwberry:fruit-beachrose", "shapeElement": "bowl/fruit 1/*", "textureMapping": [ "fruit", "berry-beachrose" ]},
+			{ "type": "item", "code": "twwberry:fruit-bearberry", "shapeElement": "bowl/fruit 1/*", "textureMapping": [ "fruit", "berry-bearberry" ]},
+			{ "type": "item", "code": "twwberry:fruit-chokecherry", "shapeElement": "bowl/fruit 1/*", "textureMapping": [ "fruit", "berry-chokecherry" ]},
+			{ "type": "item", "code": "twwberry:fruit-honeyberry", "shapeElement": "bowl/fruit 1/*", "textureMapping": [ "fruit", "berry-honeyberry" ]},
+			{ "type": "item", "code": "twwberry:fruit-salmonberry", "shapeElement": "bowl/fruit 1/*", "textureMapping": [ "fruit", "berry-salmonberry" ]},
+			{ "type": "item", "code": "twwberry:fruit-saskatoon", "shapeElement": "bowl/fruit 1/*", "textureMapping": [ "fruit", "berry-saskatoon" ]},
+			{ "type": "item", "code": "twwberry:fruit-seabuckthorn", "shapeElement": "bowl/fruit 1/*", "textureMapping": [ "fruit", "berry-seabuckthorn" ]},
+			{ "type": "item", "code": "twwberry:fruit-snowberry", "shapeElement": "bowl/fruit 1/*", "textureMapping": [ "fruit", "berry-snowberry" ]}
+        ],
+        "side": "Server"
+    },
+	{
+        "op": "addeach",
+        "file": "game:recipes/cooking/meatystew.json",
+        "path": "/ingredients/8/validStacks/-",
+        "value": [
+            { "type": "item", "code": "twwberry:cider-bearberry", "shapeElement": "bowl/topping/*", "textureMapping": [ "topping", "bearberrywine" ]},
+			{ "type": "item", "code": "twwberry:cider-chokecherry", "shapeElement": "bowl/topping/*", "textureMapping": [ "topping", "chokecherrywine" ]},
+			{ "type": "item", "code": "twwberry:cider-honeyberry", "shapeElement": "bowl/topping/*", "textureMapping": [ "topping", "honeyberrywine" ]},
+			{ "type": "item", "code": "twwberry:cider-salmonberry", "shapeElement": "bowl/topping/*", "textureMapping": [ "topping", "salmonberrywine" ]},
+			{ "type": "item", "code": "twwberry:cider-saskatoon", "shapeElement": "bowl/topping/*", "textureMapping": [ "topping", "saskatoonwine" ]},
+			{ "type": "item", "code": "twwberry:cider-seabuckthorn", "shapeElement": "bowl/topping/*", "textureMapping": [ "topping", "seabuckthornwine" ]},
+			{ "type": "item", "code": "twwberry:cider-snowberry", "shapeElement": "bowl/topping/*", "textureMapping": [ "topping", "snowberrywine" ]}
+        ],
+        "side": "Server"
+    }
+]
