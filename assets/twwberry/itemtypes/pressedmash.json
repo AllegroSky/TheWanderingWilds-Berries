@@ -6,7 +6,10 @@
 		{ "code": "berry", "states": ["bearberry", "chokecherry", "honeyberry", "salmonberry", "saskatoon", "seabuckthorn", "snowberry"] }
 	],
 	"attributes": {
-		"foodTags": ["fruitmash"],
+		"foodTagsByType": {
+			"*-snowberry": ["birdonly"],
+			"*": ["fruitmash"]
+			},
 		"juiceablePropertiesByType": {
 			"*": {
 				"liquidStack": { "type": "item", "code": "juice-{berry}", "stacksize": 1 },

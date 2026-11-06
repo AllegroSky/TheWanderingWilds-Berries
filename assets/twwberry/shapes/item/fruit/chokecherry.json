@@ -5,11 +5,8 @@
 	},
 	"textureWidth": 8,
 	"textureHeight": 8,
-	"textureSizes": {
-		"chokecherry": [8,8]
-	},
 	"textures": {
-		"chokecherry": "twwberry:item/berries/chokecherry"
+		"fruit": "twwberry:item/berries/chokecherry"
 	},
 	"elements": [
 		{

@@ -1,0 +1,87 @@
+[
+  {
+	"op": "add",
+	"path": "/attributes/creatureDiet/weightedFoodTags/-",
+	"value": {
+		"weight": 0.9,
+		"code": "birdonly"
+		},
+	"file": "game:entities/animal/bird/chicken-adult.json",
+	"side": "server"
+  },
+  {
+	"op": "add",
+	"path": "/attributes/creatureDiet/weightedFoodTags/-",
+	"value": {
+		"weight": 0.9,
+		"code": "birdonly"
+		},
+	"file": "game:entities/animal/bird/chicken-baby.json",
+	"side": "server"
+  },
+		//moreanimals birds
+  {
+	"op": "add",
+	"path": "/attributes/creatureDiet/foodTags/-",
+	"value": "birdonly",
+	"file": "moreanimals:entities/capercaillie.json",
+	"side": "server",
+	"dependsOn": [{ "modid": "moreanimals" } ]
+  },
+  {
+	"op": "add",
+	"path": "/attributes/creatureDiet/foodTags/-",
+	"value": "birdonly",
+	"file": "moreanimals:entities/capercaillie-chick.json",
+	"side": "server",
+	"dependsOn": [{ "modid": "moreanimals" } ]
+  },
+  {
+	"op": "add",
+	"path": "/attributes/creatureDiet/foodTags/-",
+	"value": "birdonly",
+	"file": "moreanimals:entities/goldenpheasant.json",
+	"side": "server",
+	"dependsOn": [{ "modid": "moreanimals" } ]
+  },
+  {
+	"op": "add",
+	"path": "/attributes/creatureDiet/foodTags/-",
+	"value": "birdonly",
+	"file": "moreanimals:entities/goldenpheasant-chick.json",
+	"side": "server",
+	"dependsOn": [{ "modid": "moreanimals" } ]
+  },
+  {
+	"op": "add",
+	"path": "/attributes/creatureDiet/foodTags/-",
+	"value": "birdonly",
+	"file": "moreanimals:entities/pheasant.json",
+	"side": "server",
+	"dependsOn": [{ "modid": "moreanimals" } ]
+  },
+  {
+	"op": "add",
+	"path": "/attributes/creatureDiet/foodTags/-",
+	"value": "birdonly",
+	"file": "moreanimals:entities/pheasant-chick.json",
+	"side": "server",
+	"dependsOn": [{ "modid": "moreanimals" } ]
+  },
+  {
+	"op": "add",
+	"path": "/attributes/creatureDiet/foodTags/-",
+	"value": "birdonly",
+	"file": "moreanimals:entities/wildturkey.json",
+	"side": "server",
+	"dependsOn": [{ "modid": "moreanimals" } ]
+  },
+  {
+	"op": "add",
+	"path": "/attributes/creatureDiet/foodTags/-",
+	"value": "birdonly",
+	"file": "moreanimals:entities/wildturkey-chick.json",
+	"side": "server",
+	"dependsOn": [{ "modid": "moreanimals" } ]
+  }
+]

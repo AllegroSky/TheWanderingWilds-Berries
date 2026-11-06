@@ -2,6 +2,10 @@
 	"code": "fruit",
 	"variantgroups": [
 		{ "code": "berry", "states": ["beachrose", "bearberry", "chokecherry", "honeyberry", "salmonberry", "saskatoon", "seabuckthorn", "snowberry"]} ],
+	"tagsByType" : {
+		"*-snowberry": [ "poisonous", "fruit", "berry" ],
+		"*": ["fruit", "berry"]
+		},
 	
 	"behaviors": [
 		{ "name": "GroundStorable", "properties": {"layout": "Quadrants", "collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.125, "z2": 1 } }}],
@@ -29,7 +33,10 @@
 		},
 		
 	"attributes": {
-		"foodTags": ["{berry}", "fruit"],
+		"foodTagsByType": {
+			"*-snowberry": [ "birdonly", "snowberry" ],
+			"*": ["{berry}", "fruit"],
+			},
 		"handbook": { "groupBy": ["fruit-*"] },	
 		"eatHealthEffectDurationSec": 10,
 		"eatHealthEffectTicks": 10,

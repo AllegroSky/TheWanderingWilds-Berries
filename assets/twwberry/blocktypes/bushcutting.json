@@ -13,8 +13,18 @@
 	],
 	"attributesByType": {
 		"*": {
-			"matureTotalMonthsMin": 2,
-			"matureTotalMonthsMax": 4,
+			"matureTotalMonthsMinByType": {
+				"@*-(beachrose|salmonberry)": 0.5,
+				"@*-(honeyberry|snowberry)": 1,
+				"*-bearberry": 3,
+				"*": 2
+				},
+			"matureTotalMonthsMaxByType": {
+				"@*-(beachrose|salmonberry)": 2,
+				"@*-(honeyberry|snowberry)": 3,
+				"*": 4,
+				},
+			
 			"maturedBlockCode": "fruitingbush-grown-{type}-{cover}"}
 		},
 	"shape": { "base": "game:block/plant/flower/1patch-cross-16x16" },

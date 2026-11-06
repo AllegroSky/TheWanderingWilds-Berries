@@ -1,0 +1,12 @@
+[
+  {
+	"code": "fruitvinegar",
+	"enabled": false,
+	"sealHours": 336,
+	"ingredients": [
+		{ "type": "item", "code": "game:waterportion", "litres": 5 },
+		{ "type": "item", "code": "twwberry:pressedmash-*", "quantity": 5 }
+		],
+	"output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 5 }
+  }
+]

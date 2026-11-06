@@ -8,6 +8,9 @@
 	"textureSizes": {
 		"fruit": [8,8]
 	},
+	"textures": {
+		"fruit": "twwberry:item/berries/beachrose"
+	},
 	"elements": [
 		{
 			"name": "origin",

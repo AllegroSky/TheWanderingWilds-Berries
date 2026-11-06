@@ -1,0 +1,36 @@
+[
+  {
+    "op": "addeach",
+    "path": "/ingredients/2/validStacks/-",
+    "value": [
+      { "type": "item", "code": "twwberry:fruit-beachrose",  "shapeElement": "bowl/berry/*", "textureMapping": ["fruit", "berry-beachrose"]  },
+      { "type": "item", "code": "twwberry:fruit-bearberry",  "shapeElement": "bowl/berry/*", "textureMapping": ["fruit", "berry-bearberry"]  },
+      { "type": "item", "code": "twwberry:fruit-chokecherry",  "shapeElement": "bowl/berry/*", "textureMapping": ["fruit", "berry-chokecherry"]  },
+      { "type": "item", "code": "twwberry:fruit-honeyberry",  "shapeElement": "bowl/berry/*", "textureMapping": ["fruit", "berry-honeyberry"]  },
+      { "type": "item", "code": "twwberry:fruit-salmonberry",  "shapeElement": "bowl/berry/*", "textureMapping": ["fruit", "berry-salmonberry"]  },
+      { "type": "item", "code": "twwberry:fruit-saskatoon",  "shapeElement": "bowl/berry/*", "textureMapping": ["fruit", "berry-saskatoon"]  },
+      { "type": "item", "code": "twwberry:fruit-seabuckthorn",  "shapeElement": "bowl/berry/*", "textureMapping": ["fruit", "berry-seabuckthorn"]  },
+      { "type": "item", "code": "twwberry:fruit-snowberry",  "shapeElement": "bowl/berry/*", "textureMapping": ["fruit", "berry-snowberry"]  },
+    ],
+    "file": "dairyplus:recipes/cooking/custardmeal.json",
+    "side": "server",
+    "dependsOn": [{ "modid": "dairyplus" } ]
+  },
+  {
+    "op": "addeach",
+    "path": "/ingredients/3/validStacks/-",
+    "value": [
+      { "type": "item", "code": "twwberry:fruit-beachrose",  "shapeElement": "bowl/berry/*", "textureMapping": ["fruit", "berry-beachrose"]  },
+      { "type": "item", "code": "twwberry:fruit-bearberry",  "shapeElement": "bowl/berry/*", "textureMapping": ["fruit", "berry-bearberry"]  },
+      { "type": "item", "code": "twwberry:fruit-chokecherry",  "shapeElement": "bowl/berry/*", "textureMapping": ["fruit", "berry-chokecherry"]  },
+      { "type": "item", "code": "twwberry:fruit-honeyberry",  "shapeElement": "bowl/berry/*", "textureMapping": ["fruit", "berry-honeyberry"]  },
+      { "type": "item", "code": "twwberry:fruit-salmonberry",  "shapeElement": "bowl/berry/*", "textureMapping": ["fruit", "berry-salmonberry"]  },
+      { "type": "item", "code": "twwberry:fruit-saskatoon",  "shapeElement": "bowl/berry/*", "textureMapping": ["fruit", "berry-saskatoon"]  },
+      { "type": "item", "code": "twwberry:fruit-seabuckthorn",  "shapeElement": "bowl/berry/*", "textureMapping": ["fruit", "berry-seabuckthorn"]  },
+      { "type": "item", "code": "twwberry:fruit-snowberry",  "shapeElement": "bowl/berry/*", "textureMapping": ["fruit", "berry-snowberry"]  },
+    ],
+    "file": "dairyplus:recipes/cooking/custardmeal.json",
+    "side": "server",
+    "dependsOn": [{ "modid": "dairyplus" } ]
+  },
+]

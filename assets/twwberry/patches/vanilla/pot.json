@@ -1,0 +1,93 @@
+[
+	{
+		"op": "addmerge",
+		"path": "/textures/berry-beachrose",
+		"value": { "base": "twwberry:item/mash/beachrose" },
+		"file": "game:blocktypes/clay/fired/pot.json",
+	},
+	// Placeholder for beachrose cider on this line, eventually
+	{
+		"op": "addmerge",
+		"path": "/textures/berry-bearberry",
+		"value": { "base": "twwberry:item/mash/bearberry" },
+		"file": "game:blocktypes/clay/fired/pot.json",
+	},
+	{
+		"op": "addmerge",
+		"path": "/textures/bearberrywine",
+		"value": { "base": "twwberry:item/liquid/bearberry" },
+		"file": "game:blocktypes/clay/fired/pot.json",
+	},
+	{
+		"op": "addmerge",
+		"path": "/textures/berry-chokecherry",
+		"value": { "base": "twwberry:item/mash/chokecherry" },
+		"file": "game:blocktypes/clay/fired/pot.json",
+	},
+	{
+		"op": "addmerge",
+		"path": "/textures/chokecherrywine",
+		"value": { "base": "twwberry:item/liquid/chokecherry" },
+		"file": "game:blocktypes/clay/fired/pot.json",
+	},
+	{
+		"op": "addmerge",
+		"path": "/textures/berry-honeyberry",
+		"value": { "base": "twwberry:item/mash/honeyberry" },
+		"file": "game:blocktypes/clay/fired/pot.json",
+	},
+	{
+		"op": "addmerge",
+		"path": "/textures/honeyberrywine",
+		"value": { "base": "twwberry:item/liquid/honeyberry" },
+		"file": "game:blocktypes/clay/fired/pot.json",
+	},
+	{
+		"op": "addmerge",
+		"path": "/textures/berry-salmonberry",
+		"value": { "base": "twwberry:item/mash/salmonberry" },
+		"file": "game:blocktypes/clay/fired/pot.json",
+	},
+	{
+		"op": "addmerge",
+		"path": "/textures/salmonberrywine",
+		"value": { "base": "twwberry:item/liquid/salmonberry" },
+		"file": "game:blocktypes/clay/fired/pot.json",
+	},
+	{
+		"op": "addmerge",
+		"path": "/textures/berry-saskatoon",
+		"value": { "base": "twwberry:item/mash/saskatoon" },
+		"file": "game:blocktypes/clay/fired/pot.json",
+	},
+	{
+		"op": "addmerge",
+		"path": "/textures/saskatoonwine",
+		"value": { "base": "twwberry:item/liquid/saskatoon" },
+		"file": "game:blocktypes/clay/fired/pot.json",
+	},
+	{
+		"op": "addmerge",
+		"path": "/textures/berry-seabuckthorn",
+		"value": { "base": "twwberry:item/mash/seabuckthorn" },
+		"file": "game:blocktypes/clay/fired/pot.json",
+	},
+	{
+		"op": "addmerge",
+		"path": "/textures/seabuckthornwine",
+		"value": { "base": "twwberry:item/liquid/seabuckthorn" },
+		"file": "game:blocktypes/clay/fired/pot.json",
+	},
+	{
+		"op": "addmerge",
+		"path": "/textures/berry-snowberry",
+		"value": { "base": "twwberry:item/mash/snowberry" },
+		"file": "game:blocktypes/clay/fired/pot.json",
+	},
+	{
+		"op": "addmerge",
+		"path": "/textures/snowberrywine",
+		"value": { "base": "twwberry:item/liquid/snowberry" },
+		"file": "game:blocktypes/clay/fired/pot.json",
+	}
+]

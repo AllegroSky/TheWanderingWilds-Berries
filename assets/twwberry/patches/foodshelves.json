@@ -1,0 +1,76 @@
+[
+	{
+		"op": "addmerge",
+		"file": "foodshelves:config/restrictions/baskets/fruitbasket.json",
+		"path": "/CollectibleCodes/-",
+		"value": "twwberry:fruit-*",
+		"side": "server",
+		"dependsOn": [ { "modid": "foodshelves" } ]
+	},
+	{
+		"file": "foodshelves:config/restrictions/coolers/fruitcooler.json",
+		"op": "addmerge",
+		"path": "/CollectibleCodes/-",
+		"value": "twwberry:fruit-*",
+		"side": "Server",
+		"dependsOn": [ { "modid": "foodshelves" } ],
+	},
+	{
+		"file": "twwberry:itemtypes/berries.json",
+		"op": "addmerge",
+		"path": "/attributes/fsTextureOverride",
+		"value": "twwberry:item/fill/{berry}",
+		"side": "Server",
+		"dependsOn": [ { "modid": "foodshelves" } ],
+	},
+	{
+		"file": "foodshelves:config/transformations/baskets/fruitbasket.json",
+		"op": "addmerge",
+		"path": "/twwberry:fruit-beachrose",
+		"value": {
+			"scale": 0.8,
+		},
+		"side": "Server",
+		"dependsOn": [ { "modid": "foodshelves" } ],
+	},
+	{
+		"file": "foodshelves:config/transformations/baskets/fruitbasket.json",
+		"op": "addmerge",
+		"path": "/twwberry:fruit-chokecherry",
+		"value": {
+			"scale": 0.9,
+		},
+		"side": "Server",
+		"dependsOn": [ { "modid": "foodshelves" } ],
+	},
+	{
+		"file": "foodshelves:config/transformations/baskets/fruitbasket.json",
+		"op": "addmerge",
+		"path": "/twwberry:fruit-honeyberry",
+		"value": {
+			"scale": 0.9,
+		},
+		"side": "Server",
+		"dependsOn": [ { "modid": "foodshelves" } ],
+	},
+	{
+		"file": "foodshelves:config/transformations/baskets/fruitbasket.json",
+		"op": "addmerge",
+		"path": "/twwberry:fruit-salmonberry",
+		"value": {
+			"scale": 0.8,
+		},
+		"side": "Server",
+		"dependsOn": [ { "modid": "foodshelves" } ],
+	},
+	{
+		"file": "foodshelves:config/transformations/baskets/fruitbasket.json",
+		"op": "addmerge",
+		"path": "/twwberry:fruit-snowberry",
+		"value": {
+			"scale": 0.8,
+		},
+		"side": "Server",
+		"dependsOn": [ { "modid": "foodshelves" } ],
+	},
+]

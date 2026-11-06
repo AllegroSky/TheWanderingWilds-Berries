@@ -1,0 +1,67 @@
+{
+  "NorthernRealms": [
+    "pacific nearctic",
+    "atlantic nearctic",
+    "atlantic palearctic",
+    "central palearctic",
+    "eastern palearctic",
+    "pacific palearctic"
+  ],
+  "SouthernRealms": [
+    "pacific neotropic",
+    "atlantic neotropic",
+    "atlantic afrotropic",
+    "eastern afrotropic",
+    "australasian",
+    "oceanic"
+  ],
+  "BlockPatchBiomes": {
+    "*-beachrose-*": [
+	"pacific nearctic",
+    "atlantic nearctic",
+    "atlantic palearctic",
+    "central palearctic",
+    "eastern palearctic",
+	"pacific palearctic"
+    ],
+	"*-bearberry-*": [
+	"pacific nearctic",
+    "atlantic nearctic",
+	"central palearctic",
+    "eastern palearctic",
+    ],
+	"*-chokecherry-*": [
+	"pacific nearctic",
+    "atlantic nearctic"
+    ],
+	"*-honeyberry-*": [
+	"pacific nearctic",
+    "atlantic nearctic",
+    "atlantic palearctic",
+    "central palearctic",
+    "eastern palearctic",
+	"pacific palearctic"
+    ],
+	"*-salmonberry-*": [
+	"pacific nearctic",
+	"atlantic nearctic",
+	"atlantic palearctic"
+    ],
+	"*-saskatoon-*": [
+	"pacific nearctic",
+	"atlantic nearctic",
+	"atlantic palearctic"
+    ],
+	"*-seabuckthorn-*": [
+	"atlantic palearctic",
+	"central palearctic",
+    "eastern palearctic"
+    ],
+	"*-snowberry-*": [
+	"pacific nearctic",
+    "atlantic nearctic",
+    "central palearctic",
+    "eastern palearctic"
+    ]
+  }
+}

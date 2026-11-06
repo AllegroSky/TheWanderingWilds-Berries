@@ -5,6 +5,10 @@
 	},
 	"textureWidth": 4,
 	"textureHeight": 4,
+	"textures": {
+		"fruit": "twwberry:item/berries/honeyberry",
+		"leaf": "twwberry:item/berries/honeyberryleaf",
+	},
 	"elements": [
 		{
 			"name": "center",

@@ -1,0 +1,218 @@
+[
+  {
+	"op": "add",
+	"path": "/attributes/contentConfig/-",
+	"value": {
+		"code": "bearberrymash",
+		"content": {
+		"type": "item",
+		"code": "twwberry:pressedmash-bearberry"
+		},
+		"quantityPerFillLevel": 2,
+		"maxFillLevels": 8,
+		"shapesPerFillLevel": [
+		"block/wood/trough/large/grainfill1",
+		"block/wood/trough/large/grainfill1",
+		"block/wood/trough/large/grainfill2",
+		"block/wood/trough/large/grainfill2",
+		"block/wood/trough/large/grainfill3",
+		"block/wood/trough/large/grainfill3",
+		"block/wood/trough/large/grainfill4",
+		"block/wood/trough/large/grainfill4"
+		],
+		"textureCode": "contents-pressedmash-bearberry"
+	},
+	"file": "game:blocktypes/wood/trough-large.json",
+	"side": "server"
+  },
+  {
+	"op": "add",
+	"path": "/textures/contents-pressedmash-bearberry",
+	"value": {
+		"base": "twwberry:item/mash/bearberry",
+		"overlays": ["game:block/wood/trough/large/shadow"]
+	},
+	"file": "game:blocktypes/wood/trough-large.json",
+	"side": "server"
+  },
+  {
+	"op": "add",
+	"path": "/attributes/contentConfig/-",
+	"value": {
+		"code": "chokecherrymash",
+		"content": {
+		"type": "item",
+		"code": "twwberry:pressedmash-chokecherry"
+		},
+		"quantityPerFillLevel": 2,
+		"maxFillLevels": 8,
+		"shapesPerFillLevel": [
+		"block/wood/trough/large/grainfill1",
+		"block/wood/trough/large/grainfill1",
+		"block/wood/trough/large/grainfill2",
+		"block/wood/trough/large/grainfill2",
+		"block/wood/trough/large/grainfill3",
+		"block/wood/trough/large/grainfill3",
+		"block/wood/trough/large/grainfill4",
+		"block/wood/trough/large/grainfill4"
+		],
+		"textureCode": "contents-pressedmash-chokecherry"
+	},
+	"file": "game:blocktypes/wood/trough-large.json",
+	"side": "server"
+  },
+  {
+	"op": "add",
+	"path": "/textures/contents-pressedmash-chokecherry",
+	"value": {
+		"base": "twwberry:item/mash/chokecherry",
+		"overlays": ["game:block/wood/trough/large/shadow"]
+	},
+	"file": "game:blocktypes/wood/trough-large.json",
+	"side": "server"
+  },
+  {
+	"op": "add",
+	"path": "/attributes/contentConfig/-",
+	"value": {
+		"code": "honeyberrymash",
+		"content": {
+		"type": "item",
+		"code": "twwberry:pressedmash-honeyberry"
+		},
+		"quantityPerFillLevel": 2,
+		"maxFillLevels": 8,
+		"shapesPerFillLevel": [
+		"block/wood/trough/large/grainfill1",
+		"block/wood/trough/large/grainfill1",
+		"block/wood/trough/large/grainfill2",
+		"block/wood/trough/large/grainfill2",
+		"block/wood/trough/large/grainfill3",
+		"block/wood/trough/large/grainfill3",
+		"block/wood/trough/large/grainfill4",
+		"block/wood/trough/large/grainfill4"
+		],
+		"textureCode": "contents-pressedmash-honeyberry"
+	},
+	"file": "game:blocktypes/wood/trough-large.json",
+	"side": "server"
+  },
+  {
+	"op": "add",
+	"path": "/textures/contents-pressedmash-honeyberry",
+	"value": {
+		"base": "twwberry:item/mash/honeyberry",
+		"overlays": ["game:block/wood/trough/large/shadow"]
+	},
+	"file": "game:blocktypes/wood/trough-large.json",
+	"side": "server"
+  },
+  {
+	"op": "add",
+	"path": "/attributes/contentConfig/-",
+	"value": {
+		"code": "salmonberrymash",
+		"content": {
+		"type": "item",
+		"code": "twwberry:pressedmash-salmonberry"
+		},
+		"quantityPerFillLevel": 2,
+		"maxFillLevels": 8,
+		"shapesPerFillLevel": [
+		"block/wood/trough/large/grainfill1",
+		"block/wood/trough/large/grainfill1",
+		"block/wood/trough/large/grainfill2",
+		"block/wood/trough/large/grainfill2",
+		"block/wood/trough/large/grainfill3",
+		"block/wood/trough/large/grainfill3",
+		"block/wood/trough/large/grainfill4",
+		"block/wood/trough/large/grainfill4"
+		],
+		"textureCode": "contents-pressedmash-salmonberry"
+	},
+	"file": "game:blocktypes/wood/trough-large.json",
+	"side": "server"
+  },
+  {
+	"op": "add",
+	"path": "/textures/contents-pressedmash-salmonberry",
+	"value": {
+		"base": "twwberry:item/mash/salmonberry",
+		"overlays": ["game:block/wood/trough/large/shadow"]
+	},
+	"file": "game:blocktypes/wood/trough-large.json",
+	"side": "server"
+  },
+  {
+	"op": "add",
+	"path": "/attributes/contentConfig/-",
+	"value": {
+		"code": "saskatoonmash",
+		"content": {
+		"type": "item",
+		"code": "twwberry:pressedmash-saskatoon"
+		},
+		"quantityPerFillLevel": 2,
+		"maxFillLevels": 8,
+		"shapesPerFillLevel": [
+		"block/wood/trough/large/grainfill1",
+		"block/wood/trough/large/grainfill1",
+		"block/wood/trough/large/grainfill2",
+		"block/wood/trough/large/grainfill2",
+		"block/wood/trough/large/grainfill3",
+		"block/wood/trough/large/grainfill3",
+		"block/wood/trough/large/grainfill4",
+		"block/wood/trough/large/grainfill4"
+		],
+		"textureCode": "contents-pressedmash-saskatoon"
+	},
+	"file": "game:blocktypes/wood/trough-large.json",
+	"side": "server"
+  },
+  {
+	"op": "add",
+	"path": "/textures/contents-pressedmash-saskatoon",
+	"value": {
+		"base": "twwberry:item/mash/saskatoon",
+		"overlays": ["game:block/wood/trough/large/shadow"]
+	},
+	"file": "game:blocktypes/wood/trough-large.json",
+	"side": "server"
+  },
+  {
+	"op": "add",
+	"path": "/attributes/contentConfig/-",
+	"value": {
+		"code": "seabuckthornmash",
+		"content": {
+		"type": "item",
+		"code": "twwberry:pressedmash-seabuckthorn"
+		},
+		"quantityPerFillLevel": 2,
+		"maxFillLevels": 8,
+		"shapesPerFillLevel": [
+		"block/wood/trough/large/grainfill1",
+		"block/wood/trough/large/grainfill1",
+		"block/wood/trough/large/grainfill2",
+		"block/wood/trough/large/grainfill2",
+		"block/wood/trough/large/grainfill3",
+		"block/wood/trough/large/grainfill3",
+		"block/wood/trough/large/grainfill4",
+		"block/wood/trough/large/grainfill4"
+		],
+		"textureCode": "contents-pressedmash-seabuckthorn"
+	},
+	"file": "game:blocktypes/wood/trough-large.json",
+	"side": "server"
+  },
+  {
+	"op": "add",
+	"path": "/textures/contents-pressedmash-seabuckthorn",
+	"value": {
+		"base": "twwberry:item/mash/seabuckthorn",
+		"overlays": ["game:block/wood/trough/large/shadow"]
+	},
+	"file": "game:blocktypes/wood/trough-large.json",
+	"side": "server"
+  }
+]
